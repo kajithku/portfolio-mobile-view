@@ -4,7 +4,7 @@ body{
     line-height: 25px;
 }
 
-.hero {
+.home-bg {
     position: relative; 
     min-height: 90vh;
     /* background-size: cover; */
@@ -14,7 +14,7 @@ body{
     justify-content: center;
 }
 
-.hero::before {    
+.home-bg::before {    
       content: "";
       background-image: url('../images/bg4.webp');
       background-size: cover;
@@ -27,18 +27,24 @@ body{
       width: 100%;
 }
 
-.hero h1 {
+.home-bg h1 {
   position: relative;
   color: #0A4D49;  
-  font-size: 4em;
+  font-size: 3em;
   font-weight: bold;
   line-height: 0.9;
   text-align: center;
+  animation-name: home-bg-example;
+  animation-duration: 4s;
 }
+
+@keyframes home-bg-example {
+    from {color: lemonchiffon;}
+    to {color: #0A4D49;}
+  }
 
 .container {
     margin: 2% auto 2%;
-    /* text-align: justify; */
     padding: 0 32px;
 }
 
@@ -76,7 +82,7 @@ h4{
     color: #0A4D49;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 p{
@@ -101,9 +107,9 @@ a.skip{
     margin-bottom: 24px;
 }
 
-.photo-img{
+.about-img, .photo-img{
     height: 300px;
-    width: 400px;
+    width: 300px;
     border: 5px solid #0A4D49;
     padding: 10px;
     border-radius: 10px;
@@ -112,8 +118,6 @@ a.skip{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* transition: transform 0.5s; */
-    /* position: relative; */
     filter: saturate(150%);
 }
 
@@ -123,10 +127,10 @@ a.skip{
     
 }
 
-.photo-img:hover{
+.about-img:hover, .photo-img:hover{
     box-shadow: 10px #ccc;
     transform: scale(1.125);
-    /* filter: sepia(70%); */
+    transition: 0.5s;
 }
 
 /* top nav bar */
@@ -163,18 +167,18 @@ a.skip{
   }
 
 
-.about-img {
-    animation-name: example;
-    animation-duration: 8s;
+/* .about-img {
+    /* animation-name: example;
+    animation-duration: 8s; */
     width: 300px;
     height: auto;
     padding-left: 20px;
-}
+} */
 
-@keyframes example {
+/* @keyframes example {
     from {opacity: 50%; filter: grayscale(100%)}
     to {opacity: 100%; }
-}
+} */
 
 .about-text {
     padding-left: 20px;
@@ -196,6 +200,8 @@ a.skip{
     flex-wrap: wrap;
     align-items: flex-start;
     padding-bottom: 10px;
+    /* margin-left: 15%; */
+    margin-right: 15%;
 }
 
 label {
@@ -203,8 +209,7 @@ label {
 }
 
 input[type=text], textarea {
-
-  width: 50%;
+  width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -248,7 +253,7 @@ footer{
     
 }
 
-footer p {
+footer div {
     text-align: center;
     padding: 0.5em;
 }
