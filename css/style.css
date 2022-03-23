@@ -1,0 +1,269 @@
+body{
+    background-color: #fffacd;
+    font-family: "Noto Sans", sans-serif;
+    line-height: 25px;
+}
+
+.hero {
+    position: relative; 
+    min-height: 90vh;
+    /* background-size: cover; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {    
+      content: "";
+      background-image: url('../images/bg4.webp');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
+      width: 100%;
+}
+
+.hero h1 {
+  position: relative;
+  color: #0A4D49;  
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 0.9;
+  text-align: center;
+}
+
+.container {
+    margin: 2% auto 2%;
+    /* text-align: justify; */
+    padding: 0 32px;
+}
+
+h1{
+	font-size: 34px; 
+	font-weight: bold;
+    padding: 10px;
+    color: #0A4D49;
+    text-align: center;
+} 
+
+h2{
+    font-size: 28px; 
+	font-weight: bold; 
+    color:#0A4D49;
+    padding: 10px;
+    text-align: center;
+
+}
+
+h3{
+    font-size: 24px; 
+	font-weight: bold; 
+    color: #0A4D49;
+    padding: 10px;
+}
+
+h4{
+    font-size: 20px; 
+	font-weight: bold; 
+    color: #0A4D49;
+    padding: 5px;
+}
+
+p{
+    padding-top: 10%; 
+    font-size: 18px;
+    padding: 5px;
+}
+
+a.skip{
+    background: white;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    left: -500px;
+  }
+
+.photo-img{
+    /* height: 300px; */
+    width: 10%;
+    /* border: 5px dashed #0A4D49; */
+    padding: 10px;
+    border-radius: 10px;
+    margin: 50px;
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    /* transition: transform 0.5s; */
+    position: relative;
+ }
+
+ .photo-img:hover{
+    box-shadow: 0 0 10px #ccc;
+    /* transform: scale(0.7); */
+    filter: blur();
+}
+
+/* top nav bar */
+.topnav {
+    /* overflow: hidden; */
+    background: transparent;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    /* width: 100%; */
+  }
+  
+  .topnav a {
+    /* float: left; */
+    color: #0A4D49;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 0.6;
+  }
+  
+  .topnav a:hover {
+    opacity: 1;
+  }
+  
+  .topnav a.active {
+    opacity: 1;
+    box-shadow: #0A4D49 0px 3px 0px 0px;
+    border: 0px;
+    font-weight: bold;
+  }
+
+.introimg {
+    width: 1000px;
+    height: auto;
+}
+
+.about-img {
+    animation-name: example;
+    animation-duration: 8s;
+    width: 300px;
+    height: auto;
+    padding-left: 20px;
+}
+
+@keyframes example {
+    from {opacity: 50%; filter: grayscale(100%)}
+    to {opacity: 100%; }
+}
+
+.about-text {
+    padding-left: 20px;
+}
+
+.about-content {
+    /* display: flex; */
+    /* grid-column: 1 / 5; */
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+}
+
+.potrait-pics{
+    width: 300px;
+    height: auto;
+}
+
+/* .contact-cntr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+* {box-sizing: border-box;}
+
+.form-class {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    /* word-break: b; */
+}
+
+label {
+    text-align: left;
+}
+
+input[type=text], textarea {
+/* display: block; */
+  width: 30em;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #0A4D49;
+  color: lemonchiffon;
+    width: 100px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 30%);
+  /* align-self: center; */
+}
+
+input[type=submit]:hover {
+  background-color: lemonchiffon;
+  color: #0A4A00;
+  font-weight: bold;
+  border: #0A4A00 2px solid;
+  display: block;
+  /* left: 2px;
+  top: 2px;
+  bottom: 2px; */
+}
+
+
+footer{
+    background-color: #0A4D49;
+    color: lemonchiffon;
+    min-height: 90px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    /* position: absolute; */
+    
+}
+
+footer p {
+    text-align: center;
+    padding: 0.5em;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+/* Media query for non-mobile views */
+@media screen and (min-width: 900px){
+
+    .topnav {
+        justify-content: flex-start;
+    }
+
+    .hero h1 {
+    font-size: 6em;
+    }
+}
