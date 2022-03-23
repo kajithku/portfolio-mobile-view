@@ -45,16 +45,18 @@ body{
 h1{
 	font-size: 34px; 
 	font-weight: bold;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #0A4D49;
     text-align: center;
 } 
 
 h2{
     font-size: 28px; 
-	font-weight: bold; 
+	/* font-weight: bold;  */
     color:#0A4D49;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
 
 }
@@ -63,20 +65,25 @@ h3{
     font-size: 24px; 
 	font-weight: bold; 
     color: #0A4D49;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 h4{
     font-size: 20px; 
 	font-weight: bold; 
     color: #0A4D49;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 p{
-    padding-top: 10%; 
+    /* padding-top: 10%;  */
     font-size: 18px;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 a.skip{
@@ -89,24 +96,37 @@ a.skip{
     left: -500px;
   }
 
+.photo-content {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
 .photo-img{
-    /* height: 300px; */
-    width: 10%;
-    /* border: 5px dashed #0A4D49; */
+    height: 300px;
+    width: 400px;
+    border: 5px solid #0A4D49;
     padding: 10px;
     border-radius: 10px;
-    margin: 50px;
-    /* display: block; */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     /* transition: transform 0.5s; */
-    position: relative;
- }
+    /* position: relative; */
+    filter: saturate(150%);
+}
 
- .photo-img:hover{
-    box-shadow: 0 0 10px #ccc;
-    /* transform: scale(0.7); */
-    filter: blur();
+.potrait-pics {
+    width: 300px;
+    height: auto;
+    
+}
+
+.photo-img:hover{
+    box-shadow: 10px #ccc;
+    transform: scale(1.125);
+    /* filter: sepia(70%); */
 }
 
 /* top nav bar */
@@ -142,10 +162,6 @@ a.skip{
     font-weight: bold;
   }
 
-.introimg {
-    width: 1000px;
-    height: auto;
-}
 
 .about-img {
     animation-name: example;
@@ -171,16 +187,6 @@ a.skip{
     /* align-items: flex-start; */
 }
 
-.potrait-pics{
-    width: 300px;
-    height: auto;
-}
-
-/* .contact-cntr {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
 
 * {box-sizing: border-box;}
 
@@ -190,7 +196,6 @@ a.skip{
     flex-wrap: wrap;
     align-items: flex-start;
     padding-bottom: 10px;
-    /* word-break: b; */
 }
 
 label {
@@ -198,8 +203,8 @@ label {
 }
 
 input[type=text], textarea {
-/* display: block; */
-  width: 30em;
+
+  width: 50%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -219,7 +224,6 @@ input[type=submit] {
   cursor: pointer;
   box-sizing: border-box;
   box-shadow: 5px 5px 20px rgb(0 0 0 / 30%);
-  /* align-self: center; */
 }
 
 input[type=submit]:hover {
@@ -228,9 +232,6 @@ input[type=submit]:hover {
   font-weight: bold;
   border: #0A4A00 2px solid;
   display: block;
-  /* left: 2px;
-  top: 2px;
-  bottom: 2px; */
 }
 
 
