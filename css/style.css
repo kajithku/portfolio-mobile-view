@@ -38,8 +38,8 @@ body{
 }
 
 @keyframes home-bg-example {
-    from {color: lemonchiffon;}
-    to {color: #0A4D49;}
+    from {color: lemonchiffon; font-size: 4em;}
+    to {color: #0A4D49;font-size: 3em;}
   }
 
 .container {
@@ -73,6 +73,7 @@ h3{
     padding-top: 10px;
     padding-bottom: 20px;
     text-align: center;
+    line-height: 35px;
 }
 
 h4{
@@ -124,7 +125,7 @@ a.skip{
     
 }
 
-.about-img:hover, .photo-img:hover{
+.photo-img:hover{
     box-shadow: 10px #ccc;
     transform: scale(1.125);
     transition: 0.5s;
@@ -275,3 +276,17 @@ footer a:hover {
 
     
 } */
+
+@media screen and (prefers-reduced-motion: reduce){
+  
+    /*Turn off transition*/
+    a.skip {
+      -webkit-transition: initial; /* sets to default setting */
+      transition: initial; /* sets to default setting */
+    }
+  
+    /*Turn off transition*/
+    .home-bg h1{
+      animation-name: none;
+    }
+  }
