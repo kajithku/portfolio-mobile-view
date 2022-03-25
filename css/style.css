@@ -103,6 +103,9 @@ a.skip{
 .photo-content {
     margin-top: 24px;
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .about-img, .photo-img{
