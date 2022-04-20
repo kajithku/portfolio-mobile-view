@@ -62,7 +62,6 @@ h2{
     color:#0A4D49;
     padding-top: 70px;
     padding-bottom: 20px;
-    /* text-align: center; */
 
 }
 
@@ -71,7 +70,6 @@ h3{
 	font-weight: bold; 
     color: #0A4D49;
     padding-top: 10px;
-    /* padding-bottom: 10px; */
     text-align: center;
     line-height: 35px;
     margin-top: 30px;
@@ -114,7 +112,6 @@ a.skip:focus {
     justify-content: center;
     align-items: center;
     height: 70px;
-    /* position: fixed; */
   }
   
   .topnav a {
@@ -134,7 +131,6 @@ a.skip:focus {
   
   .topnav a.active {
     opacity: 1;
-    /* box-shadow: #0A4D49 0px 3px 0px 0px; */
     border: 3px solid #0A4D49;
     font-weight: bold;
   }
@@ -157,7 +153,6 @@ a.skip:focus {
   #myBtn:hover {
     background-color: lemonchiffon;
     color: #0A4A00;
-    /* font-weight: bold; */
     border: #0A4A00 2px solid;
   } 
 
@@ -178,8 +173,6 @@ a.skip:focus {
 }
 
 .about-text a:hover, a:hover {
-    /* background-color: #0A4D49; */
-    /* color: lemonchiffon; */
     border: 2px dashed #0A4D49;
 }
 
@@ -218,8 +211,7 @@ a.skip:focus {
 
 .potrait-pics {
     width: 300px;
-    height: auto;
-    
+    height: auto;    
 }
 
 .photo-img:hover{
@@ -430,9 +422,6 @@ footer a:hover {
     }
 
     .photo-content, .contact-wrapper {
-        
-        /* margin-bottom: 24px; */
-        /* display: flex; */
         align-items: flex-start;
         flex-direction: row;
     }
@@ -447,7 +436,6 @@ footer a:hover {
     }
 
     .about-img, .photo-img {
-        /* padding: 60px; */
         margin: 0px;
         width: 350px;
         height: 300px;
@@ -521,8 +509,7 @@ footer a:hover {
     }
 
     .flip-card:hover .flip-card-inner {
-        /* transform: rotateY(0deg);  */
-        transform-style: flat;
+        transform: rotateY(0deg); 
 
     } 
 
