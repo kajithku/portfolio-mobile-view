@@ -350,6 +350,56 @@ footer a:hover {
     font-weight: bold;
 }
 
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+
+.flip-card h3 {
+    color: lemonchiffon;
+}
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #0A4D49;
+    color: lemonchiffon;
+    transform: rotateY(180deg);
+  }
+
 
 /* Media query for tablet display */
 @media screen and (min-width: 640px){
@@ -372,15 +422,24 @@ footer a:hover {
     }
 
     input[type=text], textarea {
-        width: 50%;
+        width: 300px;
     }
 
     .photo-content {
-        margin: 25px;
+    margin: 25px;
+    }
+
+    .photo-content, .contact-wrapper {
+        
         /* margin-bottom: 24px; */
         /* display: flex; */
         align-items: flex-start;
         flex-direction: row;
+    }
+
+    .contact-wrapper{
+        margin-left: 4%;
+        margin-right: 4%;
     }
 
     .photo-des {
@@ -457,9 +516,15 @@ footer a:hover {
         background-attachment: initial;
     }
 
-    .photo-img:hover{
+    .photo-img:hover, .flip-card-inner{
         transition: initial;
     }
+
+    .flip-card:hover .flip-card-inner {
+        /* transform: rotateY(0deg);  */
+        transform-style: flat;
+
+    } 
 
 
   }
